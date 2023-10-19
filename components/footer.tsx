@@ -1,8 +1,8 @@
 const Footer = () =>{
     return(
-        <footer className="bg-white border-t">
+        <footer >
             <div className="mx-auto py-10">
-                <p className="text-center text-xs text-black">
+                <p className="text-center text-xs text-white">
                     &copy; 2023 La Reina- Paraná. All rights reserved.
                 </p>
             </div>

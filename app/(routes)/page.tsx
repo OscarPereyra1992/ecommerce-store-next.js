@@ -1,24 +1,66 @@
-import getBillboard from "@/actions/get-billboard";
-import getProducts from "@/actions/get-products";
-import Billboard from "@/components/billboard";
-import ProductList from "@/components/product-list";
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
+import Button from "@/components/ui/button";
 import Container from "@/components/ui/container";
+import Image from "next/image";
 
 export const revalidate = 0;
 
 const HomePage = async () => {
-  const products = await getProducts({ isFeatured: true });
-  const billboard = await getBillboard("9f2b7a5a-841b-4f0a-9c9c-1d86e275b0e1");
-  //Product List renderiza todos los productos.
   return (
-    <Container>
-      <div className="space-y-10 pb-10">
-        <Billboard data={billboard} />
-        <div className="flex flex-col gap-y-8 px-4 sm:px-6 lg:px-8">
-          <ProductList title="Featured Products" items={products} />
+    <div className="relative w-screen h-screen">
+      <div
+        className="absolute w-screen h-screen"
+        style={{
+          backgroundImage: "linear-gradient(to top left, black 50%, white 50%)"
+        }}
+      ></div>
+      <Container>
+        <Navbar />
+        <div className="relative z-20">
+          <div className="flex flex-col gap-y-8 px-4 sm:px-4 lg:px-6 items-left"> {/* Cambiado a items-center */}
+            <div className="text-left">
+            <span className="text-black text-8xl sm:text-4xl md:text-2xl lg:text-8xl font-bold font-['DM Sans']">
+                Un{" "}
+              </span>
+              <span className="text-red-500 text-8xl sm:text-4xl md:text-2xl lg:text-8xl font-bold font-['DM Sans']">
+                placer
+                <br />
+              </span>
+              <span className="text-black text-8xl sm:text-4xl md:text-2xl lg:text-8xl font-bold font-['DM Sans']">
+                en cada bocado
+              </span>
+            </div>
+            <img
+              src="/assets/hoja-landing.png"
+              alt="Imagen 1"
+              className="w-48 h-44 absolute left-[72.84px] top-[190.86px]"
+            />
+            <img
+              src="/assets/hoja-landing-2.png"
+              alt="Imagen 2"
+              className="w-48 h-44 absolute left-[124.06px] top-[242.73px]"
+            />
+            <img 
+              src="/assets/icono-la-reina.png"
+              alt="Icono la reina"
+              className="w-48 h-40 absolute right-[124.06px] top-[242.73px]"
+            />
+            <div className="mx-auto"> {/* Centrar horizontalmente */}
+            <Button className="w-96 h-20 sm:w-48 sm:h-16 relative bg-stone-900 rounded-3xl">
+                <div className="flex items-center justify-center absolute inset-0 text-stone-200 font-bold font-['DM Sans']">
+                  Conócenos
+                </div>
+              </Button>
+            </div>
+          </div>
         </div>
-      </div>
-    </Container>
+       <div className="text-black-200">
+        La reina
+       </div>
+      </Container>
+      
+    </div>
   );
 };
 

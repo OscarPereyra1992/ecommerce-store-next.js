@@ -22,9 +22,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <ModalProvider />
-        <Navbar />
+        
         {children}
-        <Footer />
+        
         </body>
     </html>
   )
