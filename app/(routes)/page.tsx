@@ -44,17 +44,17 @@ const HomePage = () => {
             <img
               src="/assets/icono-la-reina.png"
               alt="Icono la reina"
-              className="w-48 h-40 absolute-top"
+              className="w-48 h-40 flex items-center justify-center "
             />
-            <div className="mx-auto">
-              <Button className="w-96 h-20 sm:w-48 sm:h-16 relative bg-stone-900 rounded-3xl">
+          </div>
+        </div>
+            <div className="flex items-center justify-center absolute inset-x-0 bottom-20">
+              <Button className="w-96 h-20 sm:w-48 sm:h-16 relative bg-red-700 rounded-3xl">
                 <div className="flex items-center justify-center absolute inset-0 text-stone-200 font-bold font-['DM Sans']">
                   Conócenos
                 </div>
               </Button>
             </div>
-          </div>
-        </div>
       </Container>
     </div>
   );
