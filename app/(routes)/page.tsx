@@ -1,16 +1,14 @@
-import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import Button from "@/components/ui/button";
 import Container from "@/components/ui/container";
-import Image from "next/image";
 
 export const revalidate = 0;
 
-const HomePage = async () => {
+const HomePage = () => {
   return (
     <div className="relative w-screen h-screen">
       <div
-        className="absolute w-screen h-screen"
+        className="absolute w-screen h-screen sm:bg-white"
         style={{
           backgroundImage: "linear-gradient(to top left, black 50%, white 50%)"
         }}
@@ -18,36 +16,36 @@ const HomePage = async () => {
       <Container>
         <Navbar />
         <div className="relative z-20">
-          <div className="flex flex-col gap-y-8 px-4 sm:px-4 lg:px-6 items-left"> {/* Cambiado a items-center */}
-            <div className="text-left">
-            <span className="text-black text-8xl sm:text-4xl md:text-2xl lg:text-8xl font-bold font-['DM Sans']">
+          <div className="flex flex-col gap-y-8 px-4 sm:px-4 lg:px-6 items-center">
+            <div className="text-center sm:text-4xl md:text-4xl lg:text-8xl">
+              <span className="text-black font-bold font-['DM Sans']">
                 Un{" "}
               </span>
-              <span className="text-red-500 text-8xl sm:text-4xl md:text-2xl lg:text-8xl font-bold font-['DM Sans']">
+              <span className="text-red-500 font-bold font-['DM Sans']">
                 placer
                 <br />
               </span>
-              <span className="text-black text-8xl sm:text-4xl md:text-2xl lg:text-8xl font-bold font-['DM Sans']">
+              <span className="text-black font-bold font-['DM Sans']">
                 en cada bocado
               </span>
             </div>
             <img
               src="/assets/hoja-landing.png"
               alt="Imagen 1"
-              className="w-48 h-44 absolute left-[72.84px] top-[190.86px]"
+              className="w-24 h-22 sm:w-24 sm:h-22 lg:w-48 lg:h-44 absolute left-[72.84px] top-[190.86px]"
             />
             <img
               src="/assets/hoja-landing-2.png"
               alt="Imagen 2"
-              className="w-48 h-44 absolute left-[124.06px] top-[242.73px]"
+              className="w-24 h-22 sm:w-24 sm:h-22 lg:w-48 lg:h-44 absolute left-[124.06px] top-[242.73px]"
             />
-            <img 
+            <img
               src="/assets/icono-la-reina.png"
               alt="Icono la reina"
               className="w-48 h-40 absolute right-[124.06px] top-[242.73px]"
             />
-            <div className="mx-auto"> {/* Centrar horizontalmente */}
-            <Button className="w-96 h-20 sm:w-48 sm:h-16 relative bg-stone-900 rounded-3xl">
+            <div className="mx-auto">
+              <Button className="w-96 h-20 sm:w-48 sm:h-16 relative bg-stone-900 rounded-3xl">
                 <div className="flex items-center justify-center absolute inset-0 text-stone-200 font-bold font-['DM Sans']">
                   Conócenos
                 </div>
@@ -55,11 +53,7 @@ const HomePage = async () => {
             </div>
           </div>
         </div>
-       <div className="text-black-200">
-        La reina
-       </div>
       </Container>
-      
     </div>
   );
 };
