@@ -19,6 +19,7 @@ export interface Product{
     price: string;
     isFeatured: boolean;
     images: Image[];
+    description: string;
 }
 
 export interface Image{

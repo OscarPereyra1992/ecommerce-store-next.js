@@ -9,7 +9,7 @@ export const revalidate = 0;
 const Navbar = async () => {
   const categories = await getCategories();
   return (
-    <div className="border-b rounded-b-full">
+    <div className="rounded-b-full">
       <Container>
         <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-center">
             
@@ -19,9 +19,7 @@ const Navbar = async () => {
           
           
         </div>
-        {/* Poner o no poner categorías al principio
-          <MainNav data={categories} />
-          */ }
+      
       </Container>
     </div>
   );

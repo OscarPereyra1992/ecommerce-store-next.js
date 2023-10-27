@@ -1,3 +1,7 @@
+'use client';
+import {motion} from 'framer-motion'
+import Transition from './Transition';
+
 interface ContainerProps{
     children: React.ReactNode;
 }
@@ -6,10 +10,11 @@ const Container: React.FC<ContainerProps> = ({
     children
 }) => {
   return(
-  <div className="mx-auto max-w-7xl ">
+  <motion.div className="mx-auto max-w-7xl">
+    <Transition />
     {children}
     
-  </div>
+  </motion.div>
   );
 };
 
