@@ -16,47 +16,45 @@ const HomePage = () => {
       ></div>
       <Container>
         <Navbar />
-        <div className="relative z-20">
-          <div className="flex flex-col gap-y-8 px-4 sm:px-4 lg:px-6 items-center">
-            <div className="text-start sm:text-6xl md:text-6xl lg:text-6xl">
-              <span className="text-black font-bold font-['DM Sans']">Un </span>
-              <span className="text-red-500 font-bold font-['DM Sans']">
-                placer
-                <br />
-              </span>
-              <span className="text-black font-bold font-['DM Sans']">
-                en cada bocado
-              </span>
-            </div>
-            <img
-              src="/assets/hoja-landing.png"
-              alt="Imagen 1"
-              className="w-24 h-22 sm:w-24 sm:h-22 lg:w-48 lg:h-44 absolute left-[52.84px] top-[190.86px]"
-            />
-            <img
-              src="/assets/hoja-landing-2.png"
-              alt="Imagen 2"
-              className="w-24 h-22 sm:w-24 sm:h-22 lg:w-48 lg:h-44 absolute left-[12.06px] top-[186.73px]"
-            />
-
-            <img
-              src="/assets/icono-la-reina.png"
-              alt="Icono la reina"
-              className="w-48 h-40 flex items-center justify-center "
-            />
+        <div className="relative z-20 flex flex-col gap-y-8 items-center justify-center h-full">
+          <div className="text-start sm:text-6xl md:text-6xl lg:text-6xl">
+            <span className="text-black font-bold font-['DM Sans']">Un </span>
+            <span className="text-red-500 font-bold font-['DM Sans']">
+              placer
+              <br />
+            </span>
+            <span className="text-black font-bold font-['DM Sans']">
+              en cada bocado
+            </span>
           </div>
-        </div>
+          <img
+            src="/assets/hoja-landing.png"
+            alt="Imagen 1"
+            className="w-24 h-22 sm:w-24 sm:h-22 lg:w-48 lg:h-44 absolute left-[52.84px] top-[190.86px]"
+          />
+          <img
+            src="/assets/hoja-landing-2.png"
+            alt="Imagen 2"
+            className="w-24 h-22 sm:w-24 sm:h-22 lg:w-48 lg:h-44 absolute left-[12.06px] top-[186.73px]"
+          />
 
-        <div className="flex items-center justify-center absolute inset-x-0 bottom-20">
-          <Link href="/about">
-            <Button className="w-48 h-16 relative bg-red-700 rounded-3xl">
-              <div className="flex items-center justify-center absolute inset-0 text-stone-200 font-bold font-['DM Sans']">
-                Conócenos
-              </div>
-            </Button>
-          </Link>
+          <img
+            src="/assets/icono-la-reina.png"
+            alt="Icono la reina"
+            className="w-48 h-40 flex items-center justify-center "
+          />
         </div>
       </Container>
+
+      <div className="flex items-center justify-center absolute inset-x-0 bottom-20">
+        <Link href="/about">
+          <Button className="w-48 h-16 relative bg-red-700 rounded-3xl">
+            <div className="flex items-center justify-center absolute inset-0 text-stone-200 font-bold font-['DM Sans']">
+              Conócenos
+            </div>
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 };
