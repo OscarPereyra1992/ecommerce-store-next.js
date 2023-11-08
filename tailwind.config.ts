@@ -28,9 +28,13 @@ const config: Config = {
   
         '2xl': '1536px',
         // => @media (min-width: 1536px) { ... }
+      },
+      variants:{
+        animate:['words'],
       }
     },
-  },
+    },
+  
   plugins: [],
 }
 export default config

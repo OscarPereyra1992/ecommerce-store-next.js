@@ -1,7 +1,7 @@
 // framer motion
 import { motion } from 'framer-motion';
 
-// variants
+// Variants para la animación de los fondos
 const transitionVariants = {
   initial: {
     x: '100%',
@@ -14,6 +14,19 @@ const transitionVariants = {
   exit: {
     x: ['0%', '100%'],
     width: ['0%', '100%'],
+  },
+};
+
+// Variants para la animación del logo
+const logoVariants = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+  },
+  exit: {
+    opacity: 0,
   },
 };
 
@@ -44,6 +57,7 @@ const Transition = () => {
         exit='exit'
         transition={{ delay: 0.6, duration: 0.6, ease: 'easeInOut' }}
       ></motion.div>
+     
     </>
   );
 };

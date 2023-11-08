@@ -10,7 +10,7 @@ const Container: React.FC<ContainerProps> = ({
     children
 }) => {
   return(
-  <motion.div className="mx-auto max-w-7xl">
+    <motion.div className="mx-auto max-w-7xl">
     <Transition />
     {children}
     

@@ -1,20 +1,18 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Container from './ui/container';
-import MainNav from './main-nav';
-import getCategories from '@/actions/get-categories';
-import MainNavProducts from './main-nav-products';
+
 
 export const revalidate = 0;
 
-const NavbarProducts = async () => {
-  const categories = await getCategories();
+const NavbarContact = () => {
+ 
 
   return (
     <div className="bg-black rounded-sm">
       <Container>
         <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
-          <MainNavProducts data={categories} />
+         
           <Link legacyBehavior href="/">
             <a className="ml-4 flex lg:ml-0 gap-x-2">
               <Image
@@ -32,4 +30,6 @@ const NavbarProducts = async () => {
   );
 };
 
-export default NavbarProducts;
+export default NavbarContact;
+
+
