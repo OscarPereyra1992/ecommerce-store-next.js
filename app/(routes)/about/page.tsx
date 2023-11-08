@@ -8,7 +8,7 @@ import Carousel from "@/components/ui/carrousel";
 
 import NavbarContact from "@/components/navbar-contact";
 
-const words = ["Experiencia", "Magia", "Delicia", "Creatividad"];
+const words = ["Aventura", "Magia", "Delicia", "Cultura"];
 
 const AboutPage = () => {
   // Recibe las categorías como prop
@@ -31,7 +31,7 @@ const AboutPage = () => {
         <div className="relative z-20">
           <div className="flex flex-col mb-12 gap-y-8 px-4 sm:px-4 lg:px-6 items-center">
             <div className="text-center sm:text-6xl md:text-6xl lg:text-6xl">
-              <h1 className="text-8xl sm:text-8xl md:text-8xl lg:text-9xl text-center font-extrabold text-black">
+              <h1 className="text-8xl sm:text-8xl md:text-8xl lg:text-9xl xsm:text-6xl text-center font-extrabold text-black">
                 Descubre la <br />
                 <span className="text-red-500">
                   <AnimatePresence mode="wait">
@@ -52,7 +52,7 @@ const AboutPage = () => {
         </div>
       </Container>
       <div className="relative bg-black flex flex-row gap-4 sm:gap-8 px-4 sm:px-4 lg:px-6 items-center">
-        <div className="w-1/2 max-w-full">
+        <div className="w-1/2 max-w-full xsm:w-1/2">
           <div className="w-340 h-97 relative ">
             <Carousel />
           </div>
@@ -108,6 +108,7 @@ const AboutPage = () => {
             href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2FFCWLWQADLFU3L1&e=AT3tgGjiGqbhv3f2IQswETjzsLpRgszGuPnY0aMq4AP3nmqKFaDPfyhXfmU-KlXQakwY2Hkt0atzfw4NQBEAyy3TRkX3UgQkKjaJlQ"
             target="_blank"
             rel="noopener noreferrer"
+            className="transform scale-50 md:scale-100"
           >
             <svg
               width="250"
@@ -140,6 +141,7 @@ const AboutPage = () => {
             href="https://www.instagram.com/lareina.pna/"
             target="_blank"
             rel="noopener noreferrer"
+            className="transform scale-50 md:scale-100"
           >
             <svg
               width="250"
@@ -162,6 +164,7 @@ const AboutPage = () => {
             href="https://www.pedidosya.com.ar/restaurantes/parana/la-reina-parana-03d47d19-444d-4ed2-bb48-d8c304e4a598-menu?search=reina"
             target="_blank"
             rel="noopener noreferrer"
+            className="transform scale-50 md:scale-100"
           >
             <svg
               width="250"
