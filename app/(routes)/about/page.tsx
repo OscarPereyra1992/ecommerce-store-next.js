@@ -51,8 +51,11 @@ const AboutPage = () => {
           </div>
         </div>
       </Container>
-      <div className="relative bg-black flex flex-row gap-4 sm:gap-8 px-4 sm:px-4 lg:px-6 items-center">
-        <div className="w-1/2 max-w-full xsm:w-1/2">
+      <div>
+        
+      </div>
+      <div className="relative bg-black flex flex-row gap-4 xsm:px-0 sm:gap-8 px-4 sm:px-4 lg:px-6 items-center xsm:gap-0 xsm:mb-0">
+        <div className="w-1/2 max-w-full  xsm:w-1/2">
           <div className="w-340 h-97 relative ">
             <Carousel />
           </div>
@@ -63,37 +66,15 @@ const AboutPage = () => {
               <span className="text-center">Conoce</span>
               <span className="text-center">nuestro</span>
               <span className="text-center">local.</span>
+              <span className="text-center">en</span>
+              <span className="text-center">Paraná.</span>
             </div>
           </div>
         </div>
       </div>
-      <div className="relative bg-white flex flex-row gap-4 sm:gap-8 px-4 sm:px-4 lg:px-6 items-center">
-        <div className="w-1/2 max-w-full">
-          <div className="w-340 h-97 relative flex items-start">
-            <a
-              href="https://www.google.com/maps?q=-31.73876557789157,-60.53523996954433"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://d500.epimg.net/cincodias/imagenes/2015/02/17/lifestyle/1424198413_079371_1424198643_noticia_normal.jpg"
-                alt="Ver en Google Maps"
-              />
-            </a>
-          </div>
-        </div>
-        <div className="w-1/2">
-          <div className="text-center sm:text-6xl md:text-6xl lg:text-6xl text-black">
-            <div className="flex flex-col">
-              <span className="text-center">¡Nuestras</span>
-              <span className="text-center">mesas te esperan</span>
-              <span className="text-center">aquí!</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="relative bg-black flex flex-row gap-4 sm:gap-8 px-4 sm:px-4 lg:px-6 items-center">
-        <div className="w-1/2">
+     
+      <div className="relative bg-black flex flex-row gap-4 sm:gap-8 px-4 sm:px-4 lg:px-6 items-center xsm:gap-0">
+        <div className="w-1/2 mt-4">
           <div className="text-right sm:text-6xl md:text-6xl lg:text-6xl text-white">
             <div className="flex flex-col">
               <span className="text-center">Realizanos</span>
