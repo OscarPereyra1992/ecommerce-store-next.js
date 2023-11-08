@@ -16,7 +16,7 @@ const HomePage = () => {
       ></div>
       <Container>
         <Navbar />
-        <div className="relative z-20 flex flex-col gap-y-8 items-center justify-center h-full">
+        <div className="relative z-20 flex flex-col gap-y-18 items-center justify-center h-full">
           <div className="text-start sm:text-6xl md:text-6xl lg:text-6xl">
             <span className="text-black font-bold font-['DM Sans']">Un </span>
             <span className="text-red-500 font-bold font-['DM Sans']">
