@@ -18,7 +18,7 @@ const HomePage = () => {
       <Container>
         <Navbar/>
         <FloattingButtons />
-        <div className="relative z-20">
+        <div className="relative">
           <div className="flex flex-col gap-y-8 px-4 sm:px-4 lg:px-12 items-start ">
             <div className="text-start sm:text-6xl md:text-6xl lg:text-6xl xsm:my-auto xsm:text-3xl">
               <span className="text-black font-bold font-['DM Sans']">Un </span>
