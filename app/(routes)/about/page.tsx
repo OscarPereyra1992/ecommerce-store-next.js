@@ -7,6 +7,7 @@ import Footer from "@/components/footer";
 import Carousel from "@/components/ui/carrousel";
 
 import NavbarContact from "@/components/navbar-contact";
+import FloattingButtons from "@/components/ui/floating-buttons";
 
 const words = ["Aventura", "Magia", "Delicia", "Cultura"];
 
@@ -27,6 +28,7 @@ const AboutPage = () => {
   return (
     <div className="relative w-screen h-screen overflow-x-hidden">
       <NavbarContact />
+      <FloattingButtons />
       <Container>
         <div className="relative z-20">
           <div className="flex flex-col mb-12 gap-y-8 px-4 sm:px-4 lg:px-6 items-center">
@@ -73,20 +75,20 @@ const AboutPage = () => {
         </div>
       </div>
      
-      <div className="relative bg-black flex flex-row gap-4 sm:gap-8 px-4 sm:px-4 lg:px-6 items-center xsm:gap-0">
-        <div className="w-1/2 mt-4">
-          <div className="text-right sm:text-6xl md:text-6xl lg:text-6xl text-white">
+      <div className="relative bg-black flex flex-col gap-4 sm:gap-8 px-4 sm:px-4 lg:px-6 items-center xsm:gap-0">
+          <div className="text-top sm:text-6xl md:text-6xl lg:text-6xl text-white mt-4">
             <div className="flex flex-col">
-              <span className="text-center">Realizanos</span>
-              <span className="text-center">tu pedido</span>
-              <span className="text-center">por nuestros</span>
-              <span className="text-center">medios</span>
+              <span className="text-center">Nos podes</span>
+              
+              <span className="text-center">Encontrar en :</span>
+             
             </div>
           </div>
+        <div className="w-1/2">
         </div>
-        <div className="flex flex-col px-20 text-center">
+        <div className="flex flex-row px-20 text-center">
           <a
-            href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2FFCWLWQADLFU3L1&e=AT3tgGjiGqbhv3f2IQswETjzsLpRgszGuPnY0aMq4AP3nmqKFaDPfyhXfmU-KlXQakwY2Hkt0atzfw4NQBEAyy3TRkX3UgQkKjaJlQ"
+            href="https://wa.me/message/FCWLWQADLFU3L1"
             target="_blank"
             rel="noopener noreferrer"
             className="transform scale-50 md:scale-100"
@@ -160,6 +162,15 @@ const AboutPage = () => {
             </svg>
           </a>
         </div>
+          <div className="flex flex-col mb-5">
+              
+              <span className="text-center text-white"> Calle Ituzaingó 130, Paraná, Entre Ríos</span>
+              <span className="text-center text-white"> Teléfono +54 9 3436 11-1754</span>
+              
+              
+             
+            </div>
+        
       </div>
 
       <Footer />

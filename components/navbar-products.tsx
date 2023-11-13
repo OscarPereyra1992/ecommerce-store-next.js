@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Container from './ui/container';
-import MainNav from './main-nav';
+
 import getCategories from '@/actions/get-categories';
 import MainNavProducts from './main-nav-products';
 

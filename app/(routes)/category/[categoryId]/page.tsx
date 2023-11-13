@@ -7,6 +7,7 @@ import ProductCard from "@/components/ui/product-card";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import NavbarProducts from "@/components/navbar-products";
+import FloattingButtons from "@/components/ui/floating-buttons";
 
 export const revalidate = 0;
 
@@ -25,6 +26,7 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({ params }) => {
     <div className="bg-white">
       <NavbarProducts />
       <Container>
+        <FloattingButtons />
         <div className="px-4 sm:px-6 lg:px-8 pb-24">
           <div className=" lg:item-center lg:grid-cols-6 lg:gap-x-8">
             <div className=" mt-6 lg:col-span-4 lg:mt-2">

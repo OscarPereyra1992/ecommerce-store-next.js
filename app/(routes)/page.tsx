@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import FloattingButtons from "@/components/ui/floating-buttons";
 import Button from "@/components/ui/button";
 import Container from "@/components/ui/container";
 import Link from "next/link";
@@ -16,6 +17,7 @@ const HomePage = () => {
       ></div>
       <Container>
         <Navbar />
+        <FloattingButtons/>
         <div className="relative z-20">
           <div className="flex flex-col gap-y-8 px-4 sm:px-4 lg:px-6 items-center">
             <div className="text-start sm:text-6xl md:text-6xl lg:text-6xl xsm:my-auto  xsm:text-3xl">
