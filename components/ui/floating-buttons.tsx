@@ -6,7 +6,7 @@ export const revalidate = 0;
 const FloattingButtons = () => {
   return (
     <div
-      className="group fixed bottom-0 right-0 p-10  flex items-end justify-end w-24 h-24 "
+      className="group fixed bottom-0 right-0 p-10 mb-24  flex items-end justify-end w-24 h-24 "
       style={{ zIndex: 9999 }}
     >
       {/*<!-- main -->*/}
