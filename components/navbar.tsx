@@ -11,7 +11,7 @@ const Navbar = async () => {
   return (
     <div className="rounded-b-full">
       <Container>
-        <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 justify-center">
+        <div className="px-4 sm:px-6 lg:px-8 flex h-16 lg:items-center lg:justify-center justify-end ">
             
             <MainNav data={...categories}/>
             

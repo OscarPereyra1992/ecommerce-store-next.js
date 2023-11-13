@@ -8,15 +8,15 @@ export const revalidate = 0;
 
 const HomePage = () => {
   return (
-    <div className="relative w-screen h-screen">
+    <div className="relative w-screen h-screen overflow-hidden">
       <div
         className="absolute w-screen h-screen sm:bg-white"
         style={{
           backgroundImage: "linear-gradient(to top left, black 50%, white 50%) ",
         }}
       ></div>
-      <Container>
         <Navbar/>
+      <Container>
         <FloattingButtons />
         <div className="relative">
           <div className="flex flex-col gap-y-8 px-4 sm:px-4 lg:px-12 items-start ">

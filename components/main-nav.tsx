@@ -25,9 +25,9 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
   }));
 
   return (
-    <nav className="mx-6 flex items-center space-x-4 lg:space-x-4" style={{ zIndex: 9999 }}>
+    <nav className="ml-6 flex items-center space-x-4 lg:space-x-4" style={{ zIndex: 9999 }}>
       {isSmallScreen && (
-        <>
+        <div className="flex items-center space-x-4">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-red-300 text-md font-medium focus:outline-none relative z-10"
@@ -38,6 +38,7 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
               <HiMenu className="w-6 h-6" />
             )}
           </button>
+  
           {menuOpen && (
             <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex items-center justify-center">
               <div className="flex flex-col items-center space-y-4">
@@ -47,7 +48,7 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
                     href={route.href}
                     className={cn(
                       "text-md font-medium transition-colors hover:text-red-500",
-                      route.active ? "text-red-300" : "text-black"
+                      route.active ? "text-red-300" : "text-white"
                     )}
                   >
                     {route.label}
@@ -56,9 +57,9 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
               </div>
             </div>
           )}
-        </>
+        </div>
       )}
-
+  
       {!isSmallScreen &&
         routes.map((route) => (
           <Link
