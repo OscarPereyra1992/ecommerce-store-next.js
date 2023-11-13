@@ -86,7 +86,7 @@ const AboutPage = () => {
           </div>
         <div className="w-1/2">
         </div>
-        <div className="flex flex-row px-20 text-center">
+        <div className="flex flex-col lg:flex lg:flex-row px-20 text-center ">
           <a
             href="https://wa.me/message/FCWLWQADLFU3L1"
             target="_blank"
@@ -124,7 +124,7 @@ const AboutPage = () => {
             href="https://www.instagram.com/lareina.pna/"
             target="_blank"
             rel="noopener noreferrer"
-            className="transform scale-50 md:scale-100"
+            className="transform scale-50 xsm:scale-10 md:scale-100"
           >
             <svg
               width="250"

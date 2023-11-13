@@ -31,7 +31,7 @@ const Carousel: React.FC = () => {
   };
 
   return (
-    <div className="carousel-container relative flex items-center h-97">
+    <div className="carousel-container relative flex items-center h-97 ">
       <motion.button
         className="carousel-button previous text-white"
         onClick={handlePreviousImage}
