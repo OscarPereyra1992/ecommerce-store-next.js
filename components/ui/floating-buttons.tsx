@@ -5,7 +5,7 @@ export const revalidate = 0;
 
 const FloattingButtons = () => {
   return (
-    <div className = "group fixed bottom-20 right-10 p-2  flex items-end justify-end w-24 h-24" style={{ zIndex: 9999 }}>
+    <div className = "group fixed bottom-20 right-10 p-1  flex items-end justify-end w-24 h-24" style={{ zIndex: 9999 }}>
 
     <div className = "text-white shadow-xl flex items-center justify-center p-0 rounded-full bg-black z-100 absolute  ">
     <svg width="50" height="50" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -16,15 +16,36 @@ const FloattingButtons = () => {
     </div>
    
     <div className="absolute rounded-full transition-all duration-[0.2s] ease-out scale-y-0 group-hover:scale-y-100 group-hover:-translate-x-16   flex  p-2 hover:p-3 bg-black z-100 text-white">
+    <a
+            href="https://wa.me/message/FCWLWQADLFU3L1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transform scale-50 md:scale-100"
+          >
     <img src="/assets/wsp-logo.png" width={30} height={30}/>
+    </a>
     </div>
 
     <div className="absolute rounded-full transition-all duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-16  flex  p-2 hover:p-3 bg-black z-100  text-white">
+    <a
+            href="https://www.instagram.com/lareina.pna/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transform scale-50 xsm:scale-10 md:scale-100"
+          >
         <img  src="/assets/instagram-icon.png" width={30} height={30}/>
+        </a>
     </div>
     
     <div className="absolute rounded-full transition-all duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-14 group-hover:-translate-x-14   flex  p-2 hover:p-3 bg-black z-100 text-white">
+    <a
+            href="https://www.pedidosya.com.ar/restaurantes/parana/la-reina-parana-03d47d19-444d-4ed2-bb48-d8c304e4a598-menu?search=reina"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transform scale-50 md:scale-100"
+          >
         <img src="/assets/pedidosya-icon.png" width={30} height={30} alt="" />
+        </a>
     </div>
 </div>
   );
