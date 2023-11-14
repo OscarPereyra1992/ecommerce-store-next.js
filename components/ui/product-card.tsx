@@ -26,7 +26,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
       onMouseLeave={() => setHovered(false)}
       onClick={handleClick}
       className={`bg-white group cursor-pointer rounded-xl border p-3 space-y-4 ${
-        hovered ? "skew-y-3" : ""
+        hovered ? "shadow-2xl" : ""
       }`}
     >
       {/* Images and actions */}
